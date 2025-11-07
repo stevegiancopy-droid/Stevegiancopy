@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio - Steve Gian Copywriter/Business Consultant</title>
+    <meta
+      property="og:title"
+      content="Portfolio - Steve Gian Copywriter/Business Consultant"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Poppins;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./portfolio.css" rel="stylesheet" />
+
+      <div class="portfolio-container1">
+        <div class="portfolio-container2">
+          <div class="portfolio-container3">
+            <style>
+                      @keyframes fadeInDown {from {opacity: 0;
+              transform: translateY(-20px);}
+              to {opacity: 1;
+              transform: translateY(0);}}@keyframes fadeInUp {from {opacity: 0;
+              transform: translateY(20px);}
+              to {opacity: 1;
+              transform: translateY(0);}}@keyframes fadeInScale {from {opacity: 0;
+              transform: scale(0.9);}
+              to {opacity: 1;
+              transform: scale(1);}}@keyframes pulse {0%,100% {transform: scale(1);
+              opacity: 0.3;}
+              50% {transform: scale(1.1);
+              opacity: 0.5;}}
+            </style>
+          </div>
+        </div>
+        <div class="portfolio-container4">
+          <div class="portfolio-container5">
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  // Filter functionality
+                  const filterButtons = document.querySelectorAll(".filter-tab")
+                  const caseStudyCards = document.querySelectorAll(".case-study-card")
+
+                  filterButtons.forEach((button) => {
+                    button.addEventListener("click", () => {
+                      const filter = button.getAttribute("data-filter")
+
+                      // Update active button
+                      filterButtons.forEach((btn) => btn.classList.remove("filter-tab-active"))
+                      button.classList.add("filter-tab-active")
+
+                      // Filter cards with animation
+                      caseStudyCards.forEach((card, index) => {
+                        const category = card.getAttribute("data-category")
+
+                        if (filter === "all" || category === filter) {
+                          card.classList.remove("hidden")
+                          card.style.animation = "none"
+                          setTimeout(() => {
+                            card.style.animation = `fadeInScale 0.5s var(--animation-curve-primary) ${
+                              index * 0.05
+                            }s both`
+                          }, 10)
+                        } else {
+                          card.classList.add("hidden")
+                        }
+                      })
+                    })
+                  })
+
+                  // Smooth scroll for navigation
+                  const navLinks = document.querySelectorAll(".nav-link, .footer-link")
+                  navLinks.forEach((link) => {
+                    link.addEventListener("click", (e) => {
+                      const href = link.getAttribute("href")
+                      if (href.startsWith("#") && href !== "#") {
+                        e.preventDefault()
+                      }
+                    })
+                  })
+
+                  // Mobile menu toggle
+                  const mobileMenuToggle = document.getElementById("mobile-menu-toggle")
+                  const navLinksContainer = document.querySelector(".nav-links")
+
+                  mobileMenuToggle.addEventListener("click", () => {
+                    navLinksContainer.classList.toggle("active")
+                    mobileMenuToggle.classList.toggle("active")
+                  })
+
+                  // Parallax effect on hero video
+                  const heroVideo = document.querySelector(".portfolio-hero-video")
+                  window.addEventListener("scroll", () => {
+                    const scrolled = window.pageYOffset
+                    const heroHeight = document.querySelector(".portfolio-hero").offsetHeight
+
+                    if (scrolled < heroHeight) {
+                      heroVideo.style.transform = `translate(-50%, calc(-50% + ${
+                        scrolled * 0.5
+                      }px))`
+                    }
+                  })
+
+                  // Card hover effects enhancement
+                  caseStudyCards.forEach((card) => {
+                    card.addEventListener("mouseenter", () => {
+                      card.style.transform = "translateY(-8px) scale(1.02)"
+                    })
+
+                    card.addEventListener("mouseleave", () => {
+                      card.style.transform = "translateY(0) scale(1)"
+                    })
+                  })
+
+                  // Intersection Observer for scroll animations
+                  const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: "0px 0px -100px 0px",
+                  }
+
+                  const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1"
+                        entry.target.style.transform = "translateY(0)"
+                      }
+                    })
+                  }, observerOptions)
+
+                  // Observe all cards
+                  caseStudyCards.forEach((card) => {
+                    observer.observe(card)
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <nav id="portfolio-nav" class="portfolio-nav">
+          <div class="services-nav-container">
+            <a href="#">
+              <div class="portfolio-services-brand services-brand"></div>
+            </a>
+            <button
+              id="mobile-menu-toggle"
+              aria-label="Toggle menu"
+              class="services-mobile-toggle"
+            >
+              <svg
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4 5h16M4 12h16M4 19h16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <div id="nav-menu" class="services-nav-menu">
+              <a href="index.html">
+                <div class="portfolio-services-nav-link1 services-nav-link">
+                  <span>Home</span>
+                </div>
+              </a>
+              <a href="services.html">
+                <div
+                  class="portfolio-services-nav-link2 services-nav-link-active services-nav-link"
+                >
+                  <span class="portfolio-text11">Services</span>
+                </div>
+              </a>
+              <a href="portfolio.html">
+                <div class="portfolio-services-nav-link3 services-nav-link">
+                  <span>Portfolio</span>
+                </div>
+              </a>
+              <a href="article.html">
+                <div class="portfolio-services-nav-link4 services-nav-link">
+                  <span>Newsletter</span>
+                </div>
+              </a>
+              <a href="contact.html">
+                <div class="portfolio-services-nav-link5 services-nav-link">
+                  <span>Contact</span>
+                </div>
+              </a>
+              <a href="privacy-policy.html">
+                <div class="portfolio-services-nav-link6 services-nav-link">
+                  <span>Privacy Policy</span>
+                </div>
+              </a>
+            </div>
+            <nav id="portfolio-nav" class="portfolio-nav">
+              <div class="nav-container">
+                <a href="#"><div class="portfolio-nav-logo nav-logo"></div></a>
+                <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </nav>
+          </div>
+        </nav>
+        <section class="portfolio-hero">
+          <video
+            src="https://videos.pexels.com/video-files/2646392/2646392-hd_1920_1080_30fps.mp4"
+            loop="true"
+            muted="true"
+            autoplay="true"
+            playsinline="true"
+            class="portfolio-hero-video"
+          ></video>
+          <div class="portfolio-hero-overlay"></div>
+          <div class="portfolio-hero-content">
+            <div class="portfolio-hero-badge"><span>Case Studies</span></div>
+            <h1 class="portfolio-hero-title">Portfolio</h1>
+            <p class="portfolio-hero-subtitle">
+              Real results from real SaaS companies
+            </p>
+            <div class="portfolio-hero-decoration"></div>
+          </div>
+        </section>
+        <section class="portfolio-filters-section">
+          <div class="portfolio-filters-container">
+            <div class="portfolio-filters-tabs">
+              <button
+                id="tab-all"
+                data-filter="all"
+                class="filter-tab filter-tab-active"
+              >
+                <span class="portfolio-filter-tab-text1">All Projects</span>
+                <span class="portfolio-filter-tab-count1">6</span>
+              </button>
+              <button id="tab-landing" data-filter="landing" class="filter-tab">
+                <span class="portfolio-filter-tab-text2">Landing Pages</span>
+                <span class="portfolio-filter-tab-count2">3</span>
+              </button>
+              <button id="tab-email" data-filter="email" class="filter-tab">
+                <span class="portfolio-filter-tab-text3">Email Sequences</span>
+                <span class="portfolio-filter-tab-count3">3</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio-grid-section">
+          <div class="portfolio-grid-container">
+            <article data-category="landing" class="case-study-card">
+              <div class="case-study-category">
+                <span class="category-badge category-badge-landing">
+                  Landing Page
+                </span>
+              </div>
+              <div class="case-study-before-after">
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>Before</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="Before"
+                      src="https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="before-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+                <div class="before-after-arrow">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M16 7h6v6"></path>
+                      <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>After</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="After"
+                      src="https://images.pexels.com/photos/936135/pexels-photo-936135.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="after-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-content">
+                <h3 class="case-study-title">SaaS Onboarding Flow</h3>
+                <p class="case-study-description">
+                  Redesigned user onboarding experience with clear value
+                  propositions and simplified form fields to reduce friction.
+                </p>
+                <div class="case-study-results">
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">
+                      <span>Conversions:</span>
+                      <span class="portfolio-text23">2.3% → 8.7%</span>
+                    </span>
+                  </div>
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">278% increase in signups</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article data-category="landing" class="case-study-card">
+              <div class="case-study-category">
+                <span class="category-badge category-badge-landing">
+                  Landing Page
+                </span>
+              </div>
+              <div class="case-study-before-after">
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>Before</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="Before"
+                      src="https://images.pexels.com/photos/7947671/pexels-photo-7947671.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="before-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+                <div class="before-after-arrow">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M16 7h6v6"></path>
+                      <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>After</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="After"
+                      src="https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="after-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-content">
+                <h3 class="case-study-title">Product Launch Page</h3>
+                <p class="case-study-description">
+                  Created compelling product launch page with benefit-driven
+                  copy and strategic CTAs to maximize click-throughs.
+                </p>
+                <div class="case-study-results">
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">
+                      <span>Click-through:</span>
+                      <span class="portfolio-text27">12% → 34%</span>
+                    </span>
+                  </div>
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">183% CTR improvement</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article data-category="landing" class="case-study-card">
+              <div class="case-study-category">
+                <span class="category-badge category-badge-landing">
+                  Landing Page
+                </span>
+              </div>
+              <div class="case-study-before-after">
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>Before</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="Before"
+                      src="https://images.pexels.com/photos/139387/pexels-photo-139387.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="before-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+                <div class="before-after-arrow">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M16 7h6v6"></path>
+                      <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>After</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="After"
+                      src="https://images.pexels.com/photos/4405384/pexels-photo-4405384.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="after-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-content">
+                <h3 class="case-study-title">Trial Signup Funnel</h3>
+                <p class="case-study-description">
+                  Optimized trial signup funnel with social proof elements and
+                  urgency-driven messaging to boost conversions.
+                </p>
+                <div class="case-study-results">
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">
+                      <span>Signup Rate:</span>
+                      <span class="portfolio-text31">18% → 42%</span>
+                    </span>
+                  </div>
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">133% more trial users</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article data-category="email" class="case-study-card">
+              <div class="case-study-category">
+                <span class="category-badge-email category-badge">
+                  Email Sequence
+                </span>
+              </div>
+              <div class="case-study-before-after">
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>Before</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="Before"
+                      src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="before-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+                <div class="before-after-arrow">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M16 7h6v6"></path>
+                      <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>After</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="After"
+                      src="https://images.pexels.com/photos/8353809/pexels-photo-8353809.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="after-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-content">
+                <h3 class="case-study-title">Welcome Series</h3>
+                <p class="case-study-description">
+                  Crafted personalized welcome email sequence with value-first
+                  approach and strategic product education touchpoints.
+                </p>
+                <div class="case-study-results">
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">
+                      <span>Open Rate:</span>
+                      <span class="portfolio-text35">15% → 45%</span>
+                    </span>
+                  </div>
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">200% engagement boost</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article data-category="email" class="case-study-card">
+              <div class="case-study-category">
+                <span class="category-badge-email category-badge">
+                  Email Sequence
+                </span>
+              </div>
+              <div class="case-study-before-after">
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>Before</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="Before"
+                      src="https://images.pexels.com/photos/8068691/pexels-photo-8068691.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="before-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+                <div class="before-after-arrow">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M16 7h6v6"></path>
+                      <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>After</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="After"
+                      src="https://images.pexels.com/photos/7109243/pexels-photo-7109243.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="after-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-content">
+                <h3 class="case-study-title">Re-engagement Campaign</h3>
+                <p class="case-study-description">
+                  Developed targeted re-engagement sequence with compelling
+                  subject lines and benefit-focused content to win back inactive
+                  users.
+                </p>
+                <div class="case-study-results">
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">
+                      <span>Click Rate:</span>
+                      <span class="portfolio-text39">8% → 28%</span>
+                    </span>
+                  </div>
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">250% more re-activations</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article data-category="email" class="case-study-card">
+              <div class="case-study-category">
+                <span class="category-badge-email category-badge">
+                  Email Sequence
+                </span>
+              </div>
+              <div class="case-study-before-after">
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>Before</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="Before"
+                      src="https://images.pexels.com/photos/15096572/pexels-photo-15096572.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="before-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+                <div class="before-after-arrow">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M16 7h6v6"></path>
+                      <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="before-after-item">
+                  <div class="before-after-label"><span>After</span></div>
+                  <div class="before-after-image">
+                    <img
+                      alt="After"
+                      src="https://images.pexels.com/photos/5217852/pexels-photo-5217852.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    />
+                    <div class="after-overlay before-after-overlay"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-content">
+                <h3 class="case-study-title">Product Update Announcement</h3>
+                <p class="case-study-description">
+                  Created excitement-driven product announcement emails with
+                  clear value messaging and early-access incentives.
+                </p>
+                <div class="case-study-results">
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">
+                      <span>Open Rate:</span>
+                      <span class="portfolio-text43">22% → 58%</span>
+                    </span>
+                  </div>
+                  <div class="result-metric">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="result-text">164% higher engagement</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="portfolio-cta-section">
+          <div class="portfolio-cta-container">
+            <div class="portfolio-cta-content">
+              <div class="portfolio-cta-decoration"></div>
+              <h2 class="portfolio-cta-title">Want results like these?</h2>
+              <p class="portfolio-cta-subtitle">Let's talk.</p>
+              <div class="portfolio-cta-buttons">
+                <button class="btn btn-lg btn-primary">
+                  <svg
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <span>Schedule Call</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="portfolio-footer-main footer-main">
+          <div class="footer-container1">
+            <div class="footer-content-grid">
+              <div class="footer-brand1 footer-column1">
+                <h3 class="footer-logo2">Steve Gian</h3>
+                <p class="footer-description1">
+                  Copywriter &amp; Business Consultant helping SaaS companies
+                  convert visitors into customers.
+                </p>
+              </div>
+              <div class="footer-links footer-column1">
+                <h4 class="footer-column-title3">Quick Links</h4>
+                <nav class="footer-nav2">
+                  <a href="#home">
+                    <div class="footer-link2"><span>Home</span></div>
+                  </a>
+                  <a href="#gallery">
+                    <div class="footer-link2"><span>Gallery</span></div>
+                  </a>
+                  <a href="#contact">
+                    <div class="footer-link2"><span>Contact</span></div>
+                  </a>
+                  <a href="#newsletter">
+                    <div class="footer-link2"><span>Newsletter</span></div>
+                  </a>
+                </nav>
+              </div>
+              <div class="footer-contact footer-column1">
+                <h4 class="footer-column-title3">Contact</h4>
+                <a href="mailto:steve@stevegiancopy.com?subject=">
+                  <div class="footer-email">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                        ></path>
+                        <rect x="2" y="4" rx="2" width="20" height="16"></rect>
+                      </g>
+                    </svg>
+                    <span>steve@stevegiancopy.com</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="footer-bottom4">
+              <p class="footer-copyright4">
+                © 2024 Steve Gian. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
