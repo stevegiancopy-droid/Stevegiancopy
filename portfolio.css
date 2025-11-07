@@ -1,0 +1,140 @@
+.portfolio-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.portfolio-container2 {
+  display: none;
+}
+ 
+.portfolio-container3 {
+  display: contents;
+}
+ 
+.portfolio-container4 {
+  display: none;
+}
+ 
+.portfolio-container5 {
+  display: contents;
+}
+ 
+.portfolio-services-brand {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  align-items: center;
+  justify-content: center;
+}
+ 
+.portfolio-services-nav-link1 {
+  text-decoration: none;
+}
+ 
+.portfolio-services-nav-link2 {
+  text-decoration: none;
+}
+ 
+.portfolio-text11 {
+  color: white;
+}
+ 
+.portfolio-services-nav-link3 {
+  text-decoration: none;
+}
+ 
+.portfolio-services-nav-link4 {
+  text-decoration: none;
+}
+ 
+.portfolio-services-nav-link5 {
+  text-decoration: none;
+}
+ 
+.portfolio-services-nav-link6 {
+  text-decoration: none;
+}
+ 
+.portfolio-nav-logo {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+}
+ 
+.portfolio-filter-tab-text1 {
+  font-family: var(--font-family-body);
+}
+ 
+.portfolio-filter-tab-count1 {
+  height: 24px;
+  display: flex;
+  padding: 0 var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  min-width: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--border-radius-full);
+  justify-content: center;
+}
+ 
+.portfolio-filter-tab-text2 {
+  font-family: var(--font-family-body);
+}
+ 
+.portfolio-filter-tab-count2 {
+  height: 24px;
+  display: flex;
+  padding: 0 var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  min-width: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--border-radius-full);
+  justify-content: center;
+}
+ 
+.portfolio-filter-tab-text3 {
+  font-family: var(--font-family-body);
+}
+ 
+.portfolio-filter-tab-count3 {
+  height: 24px;
+  display: flex;
+  padding: 0 var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  min-width: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--border-radius-full);
+  justify-content: center;
+}
+ 
+.portfolio-text23 {
+  font-weight: 700;
+}
+ 
+.portfolio-text27 {
+  font-weight: 700;
+}
+ 
+.portfolio-text31 {
+  font-weight: 700;
+}
+ 
+.portfolio-text35 {
+  font-weight: 700;
+}
+ 
+.portfolio-text39 {
+  font-weight: 700;
+}
+ 
+.portfolio-text43 {
+  font-weight: 700;
+}
+ 
+.portfolio-footer-main {
+  background-color: #0E1B2B;
+}
