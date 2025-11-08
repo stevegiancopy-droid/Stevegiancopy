@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/pages/home.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "portfolio"
+    label: "Portfolio Items"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
