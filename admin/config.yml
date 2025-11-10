@@ -1,15 +1,10 @@
+backend:
+  name: git-gateway
+  branch: main
+
 site_url: https://stevegiancopy.com
 display_url: https://stevegiancopy.com
 logo_url: https://stevegiancopy.com/images/uploads/sg-logo.png # optional
-
-backend:
-  name: git-gateway
-  branch: main
-
-
-backend:
-  name: git-gateway
-  branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
