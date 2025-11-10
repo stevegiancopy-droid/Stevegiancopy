@@ -1,3 +1,12 @@
+site_url: https://stevegiancopy.com
+display_url: https://stevegiancopy.com
+logo_url: https://stevegiancopy.com/images/uploads/sg-logo.png # optional
+
+backend:
+  name: git-gateway
+  branch: main
+
+
 backend:
   name: git-gateway
   branch: main
