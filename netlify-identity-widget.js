@@ -1,17 +1,22 @@
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
 
-    // Handle password recovery correctly
-    window.netlifyIdentity.on("recover", () => {
-      window.netlifyIdentity.open();
-    });
-  }
+  // Redirect on signup confirmation
+  window.netlifyIdentity.on("signup", () => {
+    document.location.href = "/admin/";
+  });
+
+  // Redirect on password recovery
+  window.netlifyIdentity.on("recovery", () => {
+    document.location.href = "/admin/";
+  });
+}
 </script>
