@@ -19,10 +19,63 @@ collections:
         label: "Home"
         name: "home"
         fields:
+          # HERO SECTION
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Hero Quote", name: "hero_quote", widget: "string", default: "\"Good copy doesn't just fill space, it fills bank accounts.\"" }
+          - { label: "Quote Author", name: "hero_author", widget: "string", default: "Dan Kennedy" }
+          - { label: "Primary Button Text", name: "button_primary_text", widget: "string", default: "Get High-Converting Copy" }
+          - { label: "Primary Button Link", name: "button_primary_link", widget: "string", default: "/services" }
+          - { label: "Secondary Button Text", name: "button_secondary_text", widget: "string", default: "View Gallery" }
+          - { label: "Secondary Button Link", name: "button_secondary_link", widget: "string", default: "/portfolio" }
           - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
-          - { label: "Body", name: "body", widget: "markdown" }
+
+          # PAIN POINTS SECTION
+          - label: "Pain Points"
+            name: "pain_points"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string", required: false }
+
+          # SOLUTIONS SECTION
+          - label: "Solutions"
+            name: "solutions"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string", required: false }
+
+          # BEFORE & AFTER SECTION
+          - label: "Before & After Showcase"
+            name: "showcase"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Before Image", name: "before_image", widget: "image" }
+              - { label: "After Image", name: "after_image", widget: "image" }
+
+          # TESTIMONIALS
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Avatar (optional)", name: "avatar", widget: "image", required: false }
+
+          # NEWSLETTER CTA
+          - { label: "Newsletter Title", name: "newsletter_title", widget: "string", default: "Copy Insights Weekly" }
+          - { label: "Newsletter Subtitle", name: "newsletter_subtitle", widget: "string", default: "Get weekly copywriting tips, conversion strategies, and SaaS growth insights." }
+          - { label: "Newsletter Placeholder", name: "newsletter_placeholder", widget: "string", default: "Enter your email" }
+          - { label: "Newsletter Button Text", name: "newsletter_button_text", widget: "string", default: "Subscribe" }
 
   - name: "portfolio"
     label: "Portfolio Items"
@@ -31,6 +84,4 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Date", name: "date", widget: "dat
