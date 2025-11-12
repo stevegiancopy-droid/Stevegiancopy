@@ -21,7 +21,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Hero Quote", name: "hero_quote", widget: "string", default: ""Good copy doesn't just fill space, it fills bank accounts."" }
+          - { label: "Hero Quote", name: "hero_quote", widget: "string", default: '“Good copy doesn’t just fill space, it fills bank accounts.”' }
           - { label: "Quote Author", name: "hero_author", widget: "string", default: "Dan Kennedy" }
           - { label: "Primary Button Text", name: "button_primary_text", widget: "string", default: "Get High-Converting Copy" }
           - { label: "Primary Button Link", name: "button_primary_link", widget: "string", default: "/services" }
