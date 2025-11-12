@@ -29,42 +29,52 @@ collections:
           - { label: "Secondary Button Link", name: "button_secondary_link", widget: "string", default: "/portfolio" }
           - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
 
-  - label: "Pain Points"
-    name: "pain_points"
-    widget: "list"
+  - name: "pain_points"
+    label: "Pain Points"
+    folder: "content/pain_points"
+    create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Icon", name: "icon", widget: "string", required: false }
 
-  - label: "Solutions"
-    name: "solutions"
-    widget: "list"
+  - name: "solutions"
+    label: "Solutions"
+    folder: "content/solutions"
+    create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Icon", name: "icon", widget: "string", required: false }
 
-  - label: "Before & After Showcase"
-    name: "showcase"
-    widget: "list"
+  - name: "showcase"
+    label: "Before & After Showcase"
+    folder: "content/showcase"
+    create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Before Image", name: "before_image", widget: "image" }
       - { label: "After Image", name: "after_image", widget: "image" }
 
-  - label: "Testimonials"
-    name: "testimonials"
-    widget: "list"
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Role", name: "role", widget: "string" }
       - { label: "Testimonial", name: "testimonial", widget: "text" }
       - { label: "Avatar (optional)", name: "avatar", widget: "image", required: false }
 
-  - label: "Newsletter"
-    name: "newsletter"
-    widget: "object"
+  - name: "newsletter"
+    label: "Newsletter"
+    folder: "content/newsletter"
+    create: false
+    slug: "{{slug}}"
     fields:
       - { label: "Newsletter Title", name: "newsletter_title", widget: "string", default: "Copy Insights Weekly" }
       - { label: "Newsletter Subtitle", name: "newsletter_subtitle", widget: "string", default: "Get weekly copywriting tips, conversion strategies, and SaaS growth insights." }
