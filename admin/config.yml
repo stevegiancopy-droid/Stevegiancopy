@@ -1,6 +1,6 @@
 backend:
-name: git-gateway
-branch: main
+  name: git-gateway
+  branch: main
 
 site_url: https://stevegiancopy.com
 display_url: https://stevegiancopy.com
@@ -21,7 +21,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Hero Quote", name: "hero_quote", widget: "string", default: '“Good copy doesn’t just fill space, it fills bank accounts.”' }
+          - { label: "Hero Quote", name: "hero_quote", widget: "string", default: "Good copy doesn’t just fill space, it fills bank accounts." }
           - { label: "Quote Author", name: "hero_author", widget: "string", default: "Dan Kennedy" }
           - { label: "Primary Button Text", name: "button_primary_text", widget: "string", default: "Get High-Converting Copy" }
           - { label: "Primary Button Link", name: "button_primary_link", widget: "string", default: "/services" }
@@ -29,159 +29,44 @@ collections:
           - { label: "Secondary Button Link", name: "button_secondary_link", widget: "string", default: "/portfolio" }
           - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
 
-          - label: "Pain Points"
-            name: "pain_points"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Icon", name: "icon", widget: "string", required: false }
-
-          - label: "Solutions"
-            name: "solutions"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Icon", name: "icon", widget: "string", required: false }
-
-          - label: "Before & After Showcase"
-            name: "showcase"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Before Image", name: "before_image", widget: "image" }
-              - { label: "After Image", name: "after_image", widget: "image" }
-
-          - label: "Testimonials"
-            name: "testimonials"
-            widget: "list"
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Role", name: "role", widget: "string" }
-              - { label: "Quote", name: "quote", widget: "text" }
-              - { label: "Avatar (optional)", name: "avatar", widget: "image", required: false }
-
-          - { label: "Newsletter Title", name: "newsletter_title", widget: "string", default: "Copy Insights Weekly" }
-          - { label: "Newsletter Subtitle", name: "newsletter_subtitle", widget: "string", default: "Get weekly copywriting tips, conversion strategies, and SaaS growth insights." }
-          - { label: "Newsletter Placeholder", name: "newsletter_placeholder", widget: "string", default: "Enter your email" }
-          - { label: "Newsletter Button Text", name: "newsletter_button_text", widget: "string", default: "Subscribe" }
-
-  - name: "services"
-    label: "Services Page"
-    file: "src/pages/services.html"
+  - label: "Pain Points"
+    name: "pain_points"
+    widget: "list"
     fields:
-      - { label: "Page Title", name: "title", widget: "string" }
-      - { label: "Hero Subtitle", name: "subtitle", widget: "string" }
-      - { label: "Hero Description", name: "description", widget: "text" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Icon", name: "icon", widget: "string", required: false }
 
-      - label: "Stats Section"
-        name: "stats"
-        widget: "list"
-        fields:
-          - { label: "Stat Heading", name: "heading", widget: "string" }
-          - { label: "Stat Subtext", name: "subtext", widget: "string" }
-
-      - label: "Service Cards"
-        name: "services_list"
-        widget: "list"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Bullet Points", name: "bullets", widget: "list", field: { label: "Point", name: "point", widget: "string" } }
-          - { label: "Button Label", name: "button_label", widget: "string" }
-          - { label: "Button Link", name: "button_link", widget: "string" }
-
-      - label: "Process Section"
-        name: "process"
-        widget: "list"
-        fields:
-          - { label: "Step Number", name: "number", widget: "string" }
-          - { label: "Step Title", name: "title", widget: "string" }
-          - { label: "Step Description", name: "description", widget: "text" }
-
-      - label: "Final CTA Section"
-        name: "cta"
-        widget: "object"
-        fields:
-          - { label: "CTA Heading", name: "heading", widget: "string" }
-          - { label: "CTA Subtext", name: "subtext", widget: "text" }
-          - { label: "CTA Button Label", name: "button_label", widget: "string" }
-          - { label: "CTA Button Link", name: "button_link", widget: "string" }
-- name: "portfolio"
-    label: "Portfolio Page"
-    file: "src/pages/portfolio.html"
+  - label: "Solutions"
+    name: "solutions"
+    widget: "list"
     fields:
-      - { label: "Page Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - { label: "Tag Label", name: "tag_label", widget: "string", default: "Case Studies" }
-      - label: "Portfolio Items"
-        name: "portfolio_items"
-        widget: "list"
-        fields:
-          - { label: "Category", name: "category", widget: "string" }
-          - { label: "Before Image", name: "before_image", widget: "image" }
-          - { label: "After Image", name: "after_image", widget: "image" }
-          - { label: "Project Title", name: "project_title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - label: "Results"
-            name: "results"
-            widget: "list"
-            field: { label: "Result", name: "result", widget: "string" }
-      - label: "Final CTA Section"
-        name: "cta"
-        widget: "object"
-        fields:
-          - { label: "CTA Heading", name: "heading", widget: "string" }
-          - { label: "CTA Subtext", name: "subtext", widget: "text" }
-          - { label: "CTA Button Label", name: "button_label", widget: "string" }
-          - { label: "CTA Button Link", name: "button_link", widget: "string", default: "/contact" }
-- name: "contact"
-    label: "Contact Page"
-    file: "src/pages/contact.html"
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Icon", name: "icon", widget: "string", required: false }
+
+  - label: "Before & After Showcase"
+    name: "showcase"
+    widget: "list"
     fields:
-      - { label: "Page Heading", name: "heading", widget: "string", default: "Ready to Transform Your Copy?" }
-      - label: "What You Get"
-        name: "benefits"
-        widget: "list"
-        field: { label: "Benefit", name: "benefit", widget: "string" }
-      - label: "Form Section"
-        name: "form"
-        widget: "object"
-        fields:
-          - { label: "Form Title", name: "title", widget: "string", default: "Quick Fit Check (90 seconds)" }
-          - { label: "Form Subtitle", name: "subtitle", widget: "text", default: "Answer a few questions to see if we’re a match. If yes, you'll go straight to scheduling." }
-          - label: "Form Questions"
-            name: "questions"
-            widget: "list"
-            fields:
-              - { label: "Question Label", name: "label", widget: "string" }
-              - { label: "Placeholder", name: "placeholder", widget: "string", required: false }
-              - { label: "Field Type", name: "type", widget: "select", options: ["text", "email", "textarea", "dropdown", "checkbox"] }
-      - label: "CTA Button"
-        name: "cta"
-        widget: "object"
-        fields:
-          - { label: "CTA Label", name: "label", widget: "string", default: "Check fit & book" }
-          - { label: "CTA Link", name: "link", widget: "string", default: "https://cal.com/stevegiancopy" }
-          - { label: "Email Alternative Text", name: "email_text", widget: "string", default: "Email me instead:" }
-          - { label: "Email Address", name: "email", widget: "string", default: "steve@stevegiancopy.com" }
-- name: "footer"
-    label: "Footer & Global Settings"
-    file: "src/partials/footer.html"
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Before Image", name: "before_image", widget: "image" }
+      - { label: "After Image", name: "after_image", widget: "image" }
+
+  - label: "Testimonials"
+    name: "testimonials"
+    widget: "list"
     fields:
-      - { label: "Business Name", name: "business_name", widget: "string", default: "Steve Gian" }
-      - { label: "Tagline", name: "tagline", widget: "text", default: "Copywriter & Business Consultant helping SaaS companies convert visitors into customers." }
-      - label: "Quick Links"
-        name: "quick_links"
-        widget: "list"
-        fields:
-          - { label: "Label", name: "label", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
-      - label: "Contact Info"
-        name: "contact"
-        widget: "object"
-        fields:
-          - { label: "Email Label", name: "email_label", widget: "string", default: "Email me instead:" }
-          - { label: "Email Address", name: "email", widget: "string", default: "steve@stevegiancopy.com" }
-      - { label: "Copyright Text", name: "copyright", widget: "string", default: "© 2025 Steve Gian. All rights reserved." }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Testimonial", name: "testimonial", widget: "text" }
+      - { label: "Avatar (optional)", name: "avatar", widget: "image", required: false }
+
+  - label: "Newsletter"
+    name: "newsletter"
+    widget: "object"
+    fields:
+      - { label: "Newsletter Title", name: "newsletter_title", widget: "string", default: "Copy Insights Weekly" }
+      - { label: "Newsletter Subtitle", name: "newsletter_subtitle", widget: "string", default: "Get weekly copywriting tips, conversion strategies, and SaaS growth insights." }
+      - { label: "Newsletter Placeholder", name: "newsletter_placeholder", widget: "string", default: "Enter your email" }
+      - { label: "Newsletter Button Text", name: "newsletter_button_text", widget: "string", default: "Subscribe" }
