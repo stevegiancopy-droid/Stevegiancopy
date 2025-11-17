@@ -12,22 +12,60 @@ public_folder: "/images/uploads"
 publish_mode: editorial_workflow
 
 collections:
-  - name: "pages"
+    - name: "pages"
     label: "Pages"
+    format: "json"
     files:
-      - file: "content/pages/home.md"
+      - file: "public/cms/home.json"
         label: "Home"
         name: "home"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Hero Quote", name: "hero_quote", widget: "string", default: "Good copy doesn’t just fill space, it fills bank accounts." }
-          - { label: "Quote Author", name: "hero_author", widget: "string", default: "Dan Kennedy" }
-          - { label: "Primary Button Text", name: "button_primary_text", widget: "string", default: "Get High-Converting Copy" }
-          - { label: "Primary Button Link", name: "button_primary_link", widget: "string", default: "/services" }
-          - { label: "Secondary Button Text", name: "button_secondary_text", widget: "string", default: "View Gallery" }
-          - { label: "Secondary Button Link", name: "button_secondary_link", widget: "string", default: "/portfolio" }
+          - { label: "Hero Quote", name: "hero_quote", widget: "string" }
+          - { label: "Quote Author", name: "hero_author", widget: "string" }
+          - { label: "Primary Button Text", name: "button_primary_text", widget: "string" }
+          - { label: "Primary Button Link", name: "button_primary_link", widget: "string" }
+          - { label: "Secondary Button Text", name: "button_secondary_text", widget: "string" }
+          - { label: "Secondary Button Link", name: "button_secondary_link", widget: "string" }
           - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
+
+      - file: "public/cms/services.json"
+        label: "Services"
+        name: "services"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Page Subtitle", name: "subtitle", widget: "string", required: false }
+          - { label: "Intro Text", name: "intro", widget: "text", required: false }
+
+      - file: "public/cms/portfolio.json"
+        label: "Portfolio"
+        name: "portfolio"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Intro Text", name: "intro", widget: "text", required: false }
+
+      - file: "public/cms/contact.json"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Intro Text", name: "intro", widget: "text", required: false }
+
+      - file: "public/cms/newsletter_page.json"
+        label: "Newsletter Page"
+        name: "newsletter_page"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Intro Text", name: "intro", widget: "text", required: false }
+
+      - file: "public/cms/privacy.json"
+        label: "Privacy Policy"
+        name: "privacy"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
 
   - name: "pain_points"
     label: "Pain Points"
