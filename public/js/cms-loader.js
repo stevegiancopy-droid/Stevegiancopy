@@ -21,3 +21,31 @@ fetch('/public/cms/home.json')
     }
   })
   .catch(error => console.error('Error loading home.json:', error));
+
+// HOME LOADER BLOCK
+...existing code...
+
+// ===============================
+// SERVICES PAGE LOADER
+// ===============================
+if (window.location.pathname.includes('services')) {
+    fetch('/public/cms/services.json')
+        .then(response => response.json())
+        .then(data => {
+
+            if (document.getElementById('services_title')) {
+                document.getElementById('services_title').textContent = data.title;
+            }
+
+            if (document.getElementById('services_subtitle')) {
+                document.getElementById('services_subtitle').textContent = data.subtitle;
+            }
+
+            if (document.getElementById('services_intro')) {
+                document.getElementById('services_intro').innerHTML = data.intro;
+            }
+
+        })
+        .catch(error => console.error('Error loading services.json:', error));
+}
+
