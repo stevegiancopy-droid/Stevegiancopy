@@ -1,4 +1,7 @@
 {
   "button_primary_text": "Get High-Converting Copy",
-  "button_primary_link": "/contact.html"
+  "button_primary_link": "/contact.html",
+
+  "button_secondary_text": "View Gallery",
+  "button_secondary_link": "/portfolio.html"
 }
