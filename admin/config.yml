@@ -12,7 +12,7 @@ public_folder: "/images/uploads"
 publish_mode: editorial_workflow
 
 collections:
-    - name: "pages"
+  - name: "pages"
     label: "Pages"
     format: "json"
     files:
@@ -65,7 +65,6 @@ collections:
         fields:
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-
 
   - name: "pain_points"
     label: "Pain Points"
