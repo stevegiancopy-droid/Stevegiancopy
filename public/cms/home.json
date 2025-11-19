@@ -1,7 +1,14 @@
 {
+  "title": "\"Good copy doesn't just fill space, it fills bank accounts.\"",
+  "subtitle": "",
+  "hero_quote": "\"Good copy doesn't just fill space, it fills bank accounts.\"",
+  "hero_author": "Dan Kennedy",
+
   "button_primary_text": "Get High-Converting Copy",
   "button_primary_link": "/contact.html",
 
   "button_secondary_text": "View Gallery",
-  "button_secondary_link": "/portfolio.html"
+  "button_secondary_link": "/portfolio.html",
+
+  "hero_image": "/images/uploads/sg-logo.png"
 }
