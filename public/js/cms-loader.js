@@ -1,5 +1,5 @@
 // Load home.json from public/cms/
-fetch('/public/cms/home.json')
+fetch('/cms/home.json')
   .then(response => response.json())
   .then(data => {
     // PRIMARY BUTTON
@@ -29,7 +29,7 @@ fetch('/public/cms/home.json')
 // SERVICES PAGE LOADER
 // ===============================
 if (window.location.pathname.includes('services')) {
-    fetch('/public/cms/services.json')
+    fetch('/cms/services.json')
         .then(response => response.json())
         .then(data => {
 
