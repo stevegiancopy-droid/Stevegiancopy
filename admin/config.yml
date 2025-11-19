@@ -33,10 +33,48 @@ collections:
       - file: "public/cms/services.json"
         label: "Services"
         name: "services"
+              - file: "public/cms/services.json"
+        label: "Services"
+        name: "services"
         fields:
-          - { label: "Page Title", name: "title", widget: "string" }
-          - { label: "Page Subtitle", name: "subtitle", widget: "string", required: false }
-          - { label: "Intro Text", name: "intro", widget: "text", required: false }
+          # HERO
+          - { label: "Hero Title", name: "title", widget: "string" }
+          - { label: "Hero Subtitle", name: "subtitle", widget: "string", required: false }
+          - { label: "Hero Intro Text", name: "intro", widget: "text", required: false }
+          - { label: "Hero Badge Text", name: "hero_badge", widget: "string", required: false }
+
+          # STATS (under the hero)
+          - { label: "Stat 1 Text", name: "stat1_text", widget: "string", required: false }
+          - { label: "Stat 1 Subtext", name: "stat1_subtext", widget: "string", required: false }
+          - { label: "Stat 2 Text", name: "stat2_text", widget: "string", required: false }
+          - { label: "Stat 2 Subtext", name: "stat2_subtext", widget: "string", required: false }
+          - { label: "Stat 3 Text", name: "stat3_text", widget: "string", required: false }
+          - { label: "Stat 3 Subtext", name: "stat3_subtext", widget: "string", required: false }
+
+          # BREAKDOWN SECTION ("Get to know more")
+          - { label: "Breakdown Label", name: "breakdown_label", widget: "string", required: false }
+          - { label: "Breakdown Title", name: "breakdown_title", widget: "string", required: false }
+
+          # PROCESS SECTION ("The 4-step Process in Detail")
+          - { label: "Process Label", name: "process_label", widget: "string", required: false }
+          - { label: "Process Title", name: "process_title", widget: "string", required: false }
+          - { label: "Step 1 Title", name: "step1_title", widget: "string", required: false }
+          - { label: "Step 1 Body", name: "step1_body", widget: "text", required: false }
+          - { label: "Step 2 Title", name: "step2_title", widget: "string", required: false }
+          - { label: "Step 2 Body", name: "step2_body", widget: "text", required: false }
+          - { label: "Step 3 Title", name: "step3_title", widget: "string", required: false }
+          - { label: "Step 3 Body", name: "step3_body", widget: "text", required: false }
+          - { label: "Step 4 Title", name: "step4_title", widget: "string", required: false }
+          - { label: "Step 4 Body", name: "step4_body", widget: "text", required: false }
+
+          # CTA SECTION ("Want me to work for you?")
+          - { label: "CTA Title", name: "cta_title", widget: "string", required: false }
+          - { label: "CTA Subtitle – Top Line", name: "cta_subtitle_top", widget: "text", required: false }
+          - { label: "CTA Subtitle – Bottom Line", name: "cta_subtitle_bottom", widget: "text", required: false }
+          - { label: "CTA Button Text", name: "cta_button_text", widget: "string", required: false }
+          - { label: "CTA Button Link", name: "cta_button_link", widget: "string", required: false }
+          - { label: "CTA Note", name: "cta_note", widget: "string", required: false }
+
 
       - file: "public/cms/portfolio.json"
         label: "Portfolio"
