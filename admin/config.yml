@@ -30,13 +30,10 @@ collections:
           - { label: "Secondary Button Link", name: "button_secondary_link", widget: "string" }
           - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
 
-      - file: "public/cms/services.json"
-        label: "Services"
-        name: "services"
-              - file: "public/cms/services.json"
-        label: "Services"
-        name: "services"
-        fields:
+          - file: "public/cms/services.json"
+            label: "Services"
+            name: "services"
+          fields:
           # HERO
           - { label: "Hero Title", name: "title", widget: "string" }
           - { label: "Hero Subtitle", name: "subtitle", widget: "string", required: false }
