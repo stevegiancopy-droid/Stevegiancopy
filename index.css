@@ -306,3 +306,30 @@
 
 /* DESKTOP NAVBAR FIX */
 
+
+/* DESKTOP NAVBAR FIX */
+@media (min-width: 992px) {
+    #navbarMenu ul.navbar-mobile-links {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 32px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        list-style: none !important;
+    }
+
+    #navbarMenu li.navbar-mobile-item {
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #navbarMenu .navbar-mobile-link {
+        padding: 0 !important;
+        background: transparent !important;
+        display: block !important;
+    }
+}
+
