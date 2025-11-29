@@ -285,4 +285,20 @@
   .home-navbar-container3 {
     width: 1272px;
   }
+  
 }
+/* NAVBAR FIX — MAKE NAV ALWAYS VISIBLE */
+.navbar-container1,
+.navbar-sticky-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999 !important;
+}
+
+/* Prevent hero from covering navbar */
+.home-hero-section {
+    padding-top: 80px !important;
+}
+
