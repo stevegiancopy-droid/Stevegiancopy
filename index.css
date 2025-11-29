@@ -287,18 +287,26 @@
   }
   
 }
-/* NAVBAR FIX — MAKE NAV ALWAYS VISIBLE */
+/* NAVBAR FIX – MAKE NAV ALWAYS ON TOP */
 .navbar-container1,
+.navbar-container2,
+.nav-mobile-menu {
+    z-index: 99999 !important;
+}
+
 .navbar-sticky-wrapper {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 99999 !important;
 }
 
-/* Prevent hero from covering navbar */
+/* HERO MUST SIT BELOW THE NAVBAR */
 .home-hero-section {
+    position: relative !important;
+    z-index: 1 !important;
     padding-top: 80px !important;
 }
+
 
