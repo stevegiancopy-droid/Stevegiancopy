@@ -293,9 +293,13 @@
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
-    z-index: 999999 !important;
-    background-color: #000000 !important; /* ensures visibility */
+    height: 80px !important;              /* NEW — gives the navbar actual height */
+    z-index: 99999 !important;
+    background-color: #000000 !important;
+    display: flex !important;
+    align-items: center !important;
 }
+
 
 /* Push hero content DOWN so navbar is not hidden behind it */
 .home-hero-section,
