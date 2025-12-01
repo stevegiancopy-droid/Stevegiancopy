@@ -75,3 +75,20 @@
     backdrop-filter: blur(12px);
     padding-top: 5rem;
     pad
+
+/* ===========================
+   CENTER HOMEPAGE CONTENT
+   =========================== */
+
+.home-container10,
+.home-container11,
+.home-container12,
+.home-container13,
+.home-container14 {
+  max-width: 1200px;   /* Same width as Services, Portfolio, Contact */
+  margin: 0 auto;      /* Centers the content */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+     
