@@ -76,48 +76,28 @@
     padding-top: 5rem;
     pad
 
-/* ===========================
-   CENTER HOMEPAGE CONTENT
-   =========================== */
-
-.home-container10,
-.home-container11,
-.home-container12,
-.home-container13,
-.home-container14 {
-  max-width: 1200px;   /* Same width as Services, Portfolio, Contact */
-  margin: 0 auto;      /* Centers the content */
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-   
-}
-
-/* Extend centering for deeper TeleportHQ hero containers */
-.home-container15,
-.home-container16,
-.home-container17,
-.home-container18,
-.home-container19 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-/* Center homepage hero exactly like other pages */
-
-.home-container10,
-.home-container11,
-.home-container12,
-.home-container13,
-.home-container14,
-.home-hero-logo-wrapper {
+/* Center the entire hero container */
+.home-container10 {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    text-align: center;
 }
 
+/* Center the text + buttons */
+.hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Center the logo under the hero content */
 .home-hero-logo-wrapper {
     display: flex;
     justify-content: center;
