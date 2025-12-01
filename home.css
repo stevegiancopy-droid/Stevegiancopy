@@ -1,0 +1,77 @@
+/* ===========================
+   HOME PAGE NAVBAR STYLING
+   =========================== */
+
+#home-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1200;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+.home-logo {
+  height: 42px;
+}
+
+/* Desktop Menu */
+.home-nav-menu {
+  display: flex;
+}
+
+.home-nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.home-nav-link {
+  color: #ffffffd9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color .3s ease;
+}
+
+.home-nav-link:hover {
+  color: #f97316; /* orange hover */
+}
+
+/* Mobile Button */
+.home-mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.home-hamburger-line {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* Mobile Menu */
+@media (max-width: 991px) {
+  .home-nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(12px);
+    padding-top: 5rem;
+    pad
