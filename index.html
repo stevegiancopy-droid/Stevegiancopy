@@ -1536,4 +1536,32 @@ body.homepage .navbar-mobile-link {
 <script src="/netlify-identity-widget.js"></script>
 <script src="/public/js/cms-loader.js"></script>
   </body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toggle = document.getElementById("homeMobileToggle");
+  const menu = document.getElementById("homeNavMenu");
+
+  toggle.addEventListener("click", () => {
+    const expanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", !expanded);
+    menu.classList.toggle("active");
+
+    // Prevent scrolling when mobile menu is open
+    document.body.style.overflow = expanded ? "" : "hidden";
+  });
+
+  // Close the menu automatically when resizing to desktop size
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 991) {
+      menu.classList.remove("active");
+      toggle.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    }
+  });
+
+});
+</script>
+
+   
 </html>
