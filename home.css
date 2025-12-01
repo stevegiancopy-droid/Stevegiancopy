@@ -76,30 +76,24 @@
     padding-top: 5rem;
     pad
 
-/* Center the entire hero container */
-.home-container10 {
+.home-hero-section {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
-
-/* Center the text + buttons */
-.hero-content {
-    text-align: center;
+.home-hero-section .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    text-align: center;
 }
-
-/* Center the logo under the hero content */
 .home-hero-logo-wrapper {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
     margin-top: 2rem;
 }
