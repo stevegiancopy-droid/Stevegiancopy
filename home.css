@@ -103,4 +103,37 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-  
+  /* ============================================================
+   FORCE HERO AREA TO CENTER EXACTLY LIKE OTHER PAGES
+   ============================================================ */
+
+.home-hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Center the text block */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Match container width system */
+.home-container10 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Center logo */
+.home-hero-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
