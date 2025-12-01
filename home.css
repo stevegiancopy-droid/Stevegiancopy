@@ -89,6 +89,18 @@
   margin: 0 auto;      /* Centers the content */
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+   
 }
 
-     
+/* Extend centering for deeper TeleportHQ hero containers */
+.home-container15,
+.home-container16,
+.home-container17,
+.home-container18,
+.home-container19 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+  
