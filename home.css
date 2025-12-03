@@ -284,3 +284,94 @@ textarea {
     font-size: 0.9rem;
     border-top: 1px solid #222;
 }
+/* ===========================
+   PAIN POINTS (new system)
+=========================== */
+.pain-points-section {
+    background: #131a26;
+    padding: 80px 20px;
+}
+
+.pain-points-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 35px;
+}
+
+.pain-point-card {
+    background: #0f1420;
+    padding: 35px 28px;
+    border-radius: 14px;
+    border: 1px solid #1f2b3a;
+    transition: 0.3s;
+}
+
+.pain-point-card:hover {
+    border-color: #ff6600;
+    transform: translateY(-4px);
+}
+
+.icon-wrapper svg {
+    color: #ff6600;
+    margin-bottom: 18px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card-desc {
+    font-size: 1rem;
+    color: #c9d3e0;
+    line-height: 1.55;
+}
+/* ===========================
+   SOLUTION CARDS (new system)
+=========================== */
+.solution-section {
+    background: #131a26;
+    padding: 80px 20px;
+}
+
+.solution-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 35px;
+}
+
+.solution-card {
+    background: #0f1420;
+    padding: 40px 30px;
+    border-radius: 14px;
+    border: 1px solid #1f2b3a;
+    transition: 0.3s;
+}
+
+.solution-card:hover {
+    border-color: #ff6600;
+    transform: translateY(-4px);
+}
+
+.solution-card .icon-wrapper svg {
+    color: #ff6600;
+    margin-bottom: 18px;
+}
+
+.solution-card .card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.solution-card .card-desc {
+    font-size: 1rem;
+    color: #c9d3e0;
+    line-height: 1.6;
+}
+
