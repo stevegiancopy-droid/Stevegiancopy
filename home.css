@@ -71,9 +71,11 @@ h2 {
     margin: auto;
     padding: 18px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;     /* center the logo */
     align-items: center;
+    position: relative;          /* needed to anchor the nav links */
 }
+
 
 .logo-text {
     font-size: 1.3rem;
@@ -84,8 +86,10 @@ h2 {
 
 /* Desktop navigation */
 .nav-links {
-    display: flex;
-    gap: 22px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav-links a {
@@ -99,12 +103,11 @@ h2 {
 }
 
 /* Mobile toggle */
-.mobile-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
+.mobileToggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Mobile nav behavior */
